@@ -37,7 +37,7 @@ A gaussian kernel of size 3 is applied to blur out any rough lines and gives
 </p>
 
 #### Region of Interest Selection
-The lanes more often than not fall within the polygon below. The vertices correspond to
+The lanes, more often than not, fall within the polygon below. The vertices correspond to
 ```
 a = [0, 1023]
 b = [0, 630]
@@ -66,7 +66,7 @@ cv2.HoughLinesP(image, rho = 1, theta = np.pi / 180, threshold = 20, minLineLeng
 </p>
 
 #### Line Averaging
-Each of the multiple line sets are average into one line. To do this I found lines with similar slops and averaged these.
+Each of the multiple line sets are averaged into one line. To do this I found lines with similar slopes and averaged them into one line. One limitation of this implementation is that it only considers two lanes for final output. However the two lanes can both be left lanes or right lanes unlike other implementations that look for one left and one right lane.
 
 <p align="left">
 <img src="https://github.com/acvictor/Lane-Detector/blob/master/images/6.png" width="420" height="230" border="0" /></a> 
