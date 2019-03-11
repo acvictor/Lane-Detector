@@ -1,6 +1,17 @@
 # Lane-Detector
 An OpenCV implementation of road lane detection written in Python.
 
+## Usage
+This project requires
+- matplotlib
+- cv2
+
+To run, clone this repository and use
+```
+python laneDetector.py --path <path to image>
+```
+
+
 ## Method Summary
 - Thresholding
 - Canny Edge Detection
